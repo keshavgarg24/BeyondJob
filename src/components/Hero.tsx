@@ -43,13 +43,7 @@ const HeroSection: React.FC = () => {
         </p>
         <div className="flex flex-col gap-4 lg:flex-row lg:gap-6">
           <a
-            href="#get-started"
-            className="bg-electric-orange text-dark-gray hover:bg-electric-orange-light transition-colors duration-300 px-6 py-3 rounded-lg text-lg font-semibold transform hover:scale-105"
-          >
-            Get Started
-          </a>
-          <a
-            href="#learn-more"
+            href="https://github.com/keshavgarg24/BeyondJob"
             className="bg-transparent border-2 border-electric-orange text-electric-orange hover:bg-electric-orange-light transition-colors duration-300 px-6 py-3 rounded-lg text-lg font-semibold transform hover:scale-105"
           >
             Star on Github
