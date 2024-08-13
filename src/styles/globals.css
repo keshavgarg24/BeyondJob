@@ -1,0 +1,70 @@
+/* src/styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 15% 10%; /* Dark blackish gray */
+    --foreground: 0 0% 100%; /* Pure white */
+    --card: 240 15% 15%; /* Slightly lighter dark gray */
+    --card-foreground: 0 0% 100%; /* Pure white */
+    --popover: 240 15% 15%; /* Slightly lighter dark gray */
+    --popover-foreground: 0 0% 100%; /* Pure white */
+    --primary: 280 80% 60%; /* Neon purple */
+    --primary-foreground: 0 0% 100%; /* Pure white */
+    --secondary: 160 80% 60%; /* Electric green */
+    --secondary-foreground: 0 0% 100%; /* Pure white */
+    --muted: 240 10% 20%; /* Dark gray */
+    --muted-foreground: 0 0% 90%; /* Light gray */
+    --accent: 50 80% 60%; /* Electric yellow */
+    --accent-foreground: 0 0% 100%; /* Pure white */
+    --destructive: 10 80% 60%; /* Neon pink */
+    --destructive-foreground: 0 0% 100%; /* Pure white */
+    --border: 240 10% 25%; /* Darker gray */
+    --input: 240 10% 30%; /* Dark gray */
+    --ring: 280 80% 50%; /* Neon purple for focus rings */
+    --radius: 0.5rem; /* Rounded corners */
+    --chart-1: 280 90% 70%; /* Lighter neon purple */
+    --chart-2: 160 90% 70%; /* Lighter electric green */
+    --chart-3: 50 90% 70%; /* Lighter electric yellow */
+    --chart-4: 10 90% 70%; /* Lighter neon pink */
+    --chart-5: 200 80% 60%; /* Bright cyan */
+  }
+
+  .dark {
+    --background: 240 10% 5%; /* Near black gray */
+    --foreground: 0 0% 95%; /* Light gray */
+    --card: 240 10% 8%; /* Near black gray */
+    --card-foreground: 0 0% 95%; /* Light gray */
+    --popover: 240 10% 8%; /* Near black gray */
+    --popover-foreground: 0 0% 95%; /* Light gray */
+    --primary: 280 90% 70%; /* Lighter neon purple */
+    --primary-foreground: 0 0% 10%; /* Very dark gray */
+    --secondary: 160 90% 70%; /* Lighter electric green */
+    --secondary-foreground: 0 0% 10%; /* Very dark gray */
+    --muted: 240 10% 15%; /* Near black gray */
+    --muted-foreground: 0 0% 85%; /* Light gray */
+    --accent: 50 90% 60%; /* Medium electric yellow */
+    --accent-foreground: 0 0% 10%; /* Very dark gray */
+    --destructive: 10 90% 60%; /* Medium neon pink */
+    --destructive-foreground: 0 0% 85%; /* Light gray */
+    --border: 240 10% 20%; /* Dark gray */
+    --input: 240 10% 20%; /* Dark gray */
+    --ring: 280 90% 60%; /* Lighter neon purple for focus rings */
+    --chart-1: 280 100% 80%; /* Bright neon purple */
+    --chart-2: 160 100% 80%; /* Bright electric green */
+    --chart-3: 50 100% 80%; /* Bright electric yellow */
+    --chart-4: 10 100% 80%; /* Bright neon pink */
+    --chart-5: 200 90% 70%; /* Bright cyan */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
