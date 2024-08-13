@@ -31,6 +31,9 @@ export default function Footer() {
         <div className="text-center text-sm text-light-gray">
           © {new Date().getFullYear()} BeyondJob, Inc. All rights reserved.
         </div>
+        <div className="text-center text-sm text-light-gray">
+          Designed by <Link href="https://www.linkedin.com/in/keshavgarg24" className="text-electric-cyan hover:underline" target="_blank" rel="noopener noreferrer">Keshav</Link>
+        </div>
       </div>
     </footer>
   );
